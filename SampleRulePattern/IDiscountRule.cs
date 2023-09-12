@@ -2,7 +2,6 @@
 
 public interface IDiscountRule
 {
-    // public short RulePriority { get; }
     public DiscountRule Type { get; }
     public bool IsStopped { get; }
     decimal Apply(Customer customer, decimal currentDiscount);

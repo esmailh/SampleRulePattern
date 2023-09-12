@@ -3,8 +3,6 @@
 public class PlanDiscountRule : IDiscountRule
 {
     private bool _isStopped = false;
-
-    // public short RulePriority => 0;
     public DiscountRule Type => DiscountRule.PlanDiscountRule;
     public bool IsStopped => _isStopped;
 

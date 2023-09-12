@@ -26,7 +26,7 @@ public class DiscountEngine
 
     public decimal Run(Customer customer)
     {
-        var discount = 0m;
+        var discount = Decimal.Zero;
         foreach (var rule in _rules)
         {
             discount = rule.Apply(customer, discount);
